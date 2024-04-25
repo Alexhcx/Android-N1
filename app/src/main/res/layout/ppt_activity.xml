@@ -43,18 +43,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="182dp"
         android:layout_marginBottom="10dp"
         android:text="JOGADOR"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/adversarioTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/adversarioTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="222dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
         android:text="ADVERSARIO"
@@ -62,19 +67,23 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/jogadorTitulo"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/vencedor"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
+        android:layout_marginEnd="59dp"
         android:layout_marginBottom="315dp"
         android:gravity="center"
         android:text=""
         android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
